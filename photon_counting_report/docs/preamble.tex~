@@ -1,0 +1,49 @@
+%Preamble for Sine Wave Lab Report
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+%attempt to anchor tables to sections
+\usepackage{float}
+\restylefloat{table}
+
+\usepackage{tikz}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+
+\tikzset{
+  anticlockwise arc centered at/.style={
+    to path={
+      let \p1=(\tikztostart), \p2=(\tikztotarget), \p3=(#1) in
+      \pgfextra{
+        \pgfmathsetmacro{\anglestart}{atan2(\x1-\x3,\y1-\y3)}
+        \pgfmathsetmacro{\angletarget}{atan2(\x2-\x3,\y2-\y3)}
+        \pgfmathsetmacro{\angletarget}%
+        {\angletarget < \anglestart ? \angletarget+360 : \angletarget}
+        \pgfmathsetmacro{\radius}{veclen(\x1-\x3,\y1-\y3)}
+      }
+      arc(\anglestart:\angletarget:\radius pt) -- (\tikztotarget)
+    },
+  },
+  clockwise arc centered at/.style={
+    to path={
+      let \p1=(\tikztostart), \p2=(\tikztotarget), \p3=(#1) in
+      \pgfextra{
+        \pgfmathsetmacro{\anglestart}{atan2(\x1-\x3,\y1-\y3)}
+        \pgfmathsetmacro{\angletarget}{atan2(\x2-\x3,\y2-\y3)}
+        \pgfmathsetmacro{\angletarget}%
+        {\angletarget > \anglestart ? \angletarget - 360 : \angletarget}
+        \pgfmathsetmacro{\radius}{veclen(\x1-\x3,\y1-\y3)}
+      }
+      arc(\anglestart:\angletarget:\radius pt)  -- (\tikztotarget)
+    },
+  },
+}
+

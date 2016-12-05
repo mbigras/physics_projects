@@ -1,0 +1,139 @@
+\input{docs/preamble}
+\title{Optical Pumping}
+\author{Max Bigras and David Frawley}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+abstract
+\end{abstract}
+
+\section{Introduction}
+We used a technique developed in the 1950s by Alfred Kastler who later won the Nobel Prize in 1966 \cite{wiki}. 
+
+
+\section{Theory}
+
+\begin{figure}[H]
+  \includegraphics[totalheight=0.65\textwidth]{figs/energy_levels}
+  \caption{Structure of the $^{85}$Rb isotope (not to scale) image from \cite{manual}}
+  \label{energy_levels}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics{figs/pumping}
+  \caption{Optical pumping of Rb atoms with 795 nm light}
+  \label{pumping}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics{figs/rfing}
+  \caption{De-pumping Rb atoms with RF photons}
+  \label{rfing}
+\end{figure}
+
+\section{Apparatus}
+Aparatus
+
+% magnetic field vs current
+\begin{figure}[H]
+  \includegraphics[totalheight=0.5\textwidth]{figs/apparatus}
+  \caption{Experimental setup. \newline
+a) Rubidium lamp \newline
+b) lens, $f$ = 50 mm \newline
+c) Interference filter \newline
+d) Polarizer \newline
+e) Quarter wave plate \newline
+f) 795 nm right circularly polarized light \newline
+g) Helmholtz coils, with rubidium chamber \newline
+h) lens, $f$ = 50 mm \newline
+i) Amplified photo-detector}
+  \label{schematic}
+\end{figure}
+
+\begin{equation}
+P = \left( \frac{N}{V} \right) kT
+\label{pressure}
+\end{equation}
+
+
+\section{Analysis}
+
+% MATLAB by itself EPS
+\begin{figure}[H]
+  \includegraphics[totalheight=0.6\textwidth]{figs/depumping_final}
+  \caption{Drop in light intensity caused by canceling Earth's magnetic field and de-pumping $^{85}$Rb and $^{87}$Rb}
+  \label{depumping}
+\end{figure}
+
+% MATLAB by itself EPS
+\begin{figure}[H]
+  \includegraphics[totalheight=0.6\textwidth]{figs/rb85}
+  \caption{Determining the slope of  $\Delta E$ vs. $B$  for  $^{85}$Rb}
+  \label{rb85line}
+\end{figure}
+
+% MATLAB by itself EPS
+\begin{figure}[H]
+  \includegraphics[totalheight=0.6\textwidth]{figs/rb87}
+  \caption{Determining the slope of $\Delta E$ vs. $B$  for  $^{87}$Rb}
+  \label{rb87line}
+\end{figure}
+
+\begin{table}[H]
+\caption{Experimental and Accepted g-factors }
+\begin{tabular}{c@{\hskip 1cm} c@{\hskip 1cm} c}
+\hline\noalign{\smallskip}
+Isotope & $g_{\mathrm{f}_{\mathrm{exp}}}$ & $g_{\mathrm{f}}$ \\
+\hline\noalign{\smallskip}
+$^{85}$Rb & $0.34 \pm 0.02$ & accepted \\
+$^{87}$Rb & $0.52 \pm 0.03$ & accpeted\\
+\hline\noalign{\smallskip}
+\end{tabular}
+\label{result}
+\end{table}
+
+\section{Conclusion}
+conclusion
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{manual} Physics Dept., ``Optical Pumping'', Quantum Lab,
+  California Polytechnic University, (2013).
+
+\bibitem{wiki} ``Optical pumping'' Wikipedia: The Free Encyclopedia. Wikimedia Foundation, Inc., 05 December 2013. Web. http://en.wikipedia.org/wiki/Optical_pumping.
+
+\bibitem{vacuum}  J. F. O'Hanlon, ``A User's Guide to Vacuum Technology'',Wiley-Interscience, New Jersey, 2003.
+
+
+
+\bibitem{manual} Physics Dept., ``The Zeeman Effect'', Quantum Lab,
+  California Polytechnic University, (2013).
+
+\bibitem{germans} Leyboldstrasse, ``Atomic and nuclear physics'', LD Didactic GmbH, Federal Repulic of Germany, (2013).
+
+\bibitem{taylor}  J. R. Taylor, ``An Introduction to Error Analysis'',University Science Books, California, 1997.
+
+\bibitem{manual} Physics Dept., ``Radioactive Decay'', Quantum Lab,
+  California Polytechnic University, (2013).
+
+\bibitem{modern} A. C. Melissinos, and J. Napolitano, ``Experiments in
+  Modern Physics,'' Academic Press, London, 2003.
+
+\bibitem{taylor} J. R. Taylor, and C. D. Zafiratos, and M. A. Dubson,
+  ``Modern Physics for Scientists and Engineers'', Prentice Hall,
+  Inc. New Jersey, 2004.
+
+\bibitem{wolframalpha} Wolfram Alpha web-page,
+  http://www.wolframalpha.com/input/?i=red+light+wavelength+in+nm
+
+\bibitem{nndc} National Nuclear Data Center web-page,
+  http://www.nndc.bnl.gov/chart/reCenter.jsp
+
+\end{thebibliography}
+
+\end{document}
