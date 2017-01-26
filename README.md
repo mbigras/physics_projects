@@ -3,13 +3,15 @@ In 2016 I graduated from California Polytechnic University with a degree in Phys
 
 You can find links to my favorite projects below.
 
-### Cool phyzixy skills
+### Physics skills
 
-* Analyze complex systems with complex tools
 * Create graphs to represent data
-* Make meaningful conclusions from by combining theoretical laws and experimental data
-* Use LaTeX to write rich lab reports
-* Manuals...read lots and lots of manuals
+* Analyze experimental data and theoretical laws
+* Write rich lab reports with LaTeX
+* Write Matlab code
+* Program Arduino
+* Perform statistical analysis with Excel
+
 
 ### Links to projects
 #### [Periodic, Period Doubling, and Chaotic Dripping in a LeakyFaucet:](https://www.dropbox.com/s/adtuf4dd53gkms1/main.pdf?dl=0)
