@@ -18,7 +18,7 @@ You can find links to my favorite projects below.
 ![](img/apparatus.png)
 
 #### [Residual Gas Analyzer Presentation Slides:](https://github.com/mbigras/physics_projects/blob/master/qlab2_final_presentation.pptx)
-![](img/pressy2.png)
+![](https://www.dropbox.com/s/jtsi5uci0jd5ujh/pressy3.png?dl=1)
 
 #### [Statistical Analysis of Photon Emissions:](https://github.com/mbigras/physics_projects/blob/master/photon_counting_report/lab_report.pdf)
 ![](img/photon.png)
